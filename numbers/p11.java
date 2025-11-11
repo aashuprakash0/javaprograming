@@ -1,22 +1,23 @@
-package numbers;
+package collectionPrograms;
 
-import java.util.Scanner;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
-//WAP to reverse a number 
 public class p11 {
 public static void main(String[] args) {
-	Scanner sc = new Scanner(System.in);
-	System.out.println("Enter a number");
-	int num=sc.nextInt(); 
-	int temp=num;
-	int lastDigit;
-	int reverse=0; 
-	while(temp!=0) {
-		lastDigit=temp%10 ;
-		temp/=10;
-		reverse=reverse*10+lastDigit ;	
-	}
-	System.out.println("Reverse Number="+reverse);
-
+	SortedSet<String> t =new TreeSet<String>();
+	t.add("Disha");
+	t.add("Thamnaha");
+	t.add("Deepika");
+	t.add("Katrina");
+	t.add("Disha");
+	t.add("Pooja");
+	t.add("Disha");
+	t.add("Anushaka");
+	System.out.println(t);
+	System.out.println(t.last());
+	System.out.println(t.first());
+	
+	
 }
 }

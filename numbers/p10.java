@@ -1,25 +1,19 @@
-package numbers;
+package collectionPrograms;
 
-import java.util.Scanner;
+import java.util.HashSet;
+import java.util.Set;
 
-/*Write A Program to find the product of all the digits in a number
- * 
- * 
- * */
 public class p10 {
 public static void main(String[] args) {
-	Scanner sc = new Scanner(System.in);
-	System.out.println("Enter a Number");
-	int num=sc.nextInt();
-	int product=1;
-	int lastDigit; 
-	while(num!=0) {
-		lastDigit=num%10;
-		num/=10;
-		product*=lastDigit;
-	
-		
-	}
-	System.out.println("Product of digits="+product);
+	Set h = new HashSet();
+	h.add("Disha");
+	h.add(100);
+	h.add(25.f);
+	h.add(true);
+	h.add(123.456d);
+	h.add("Disha");
+	h.add(null);
+	h.add(null);
+	System.out.println(h);
 }
 }
